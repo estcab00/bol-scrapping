@@ -25,7 +25,7 @@ if response.status_code == 200:
     soup = bs(response.text, "html.parser")
     print(f"You have searched for the topic {user_input}")  # Imprime el HTML de manera legible
 else:
-    print(f"Error {response.status_code}: No se pudo acceder al sitio web")
+    print(f"Error {response.status_code}: No access to the website")
 
 titles = []
 prices_before = []
